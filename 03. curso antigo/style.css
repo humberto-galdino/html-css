@@ -1,8 +1,26 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face {
+    font-family: 'bubblegum';
+    src: url(pacotes/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
+}
+@font-face {
+    font-family: 'computer';
+    src: url(pacotes/projeto-glass-html5/_fonts/computer-font.ttf);
+}
 
 body {
-    background-color: white;
+    background-color: #ddd;
     color: rgba(0, 0, 0, 1);
+}
+
+#interface {
+    width: 900px;
+    background-color: white;
+    margin: 0px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-top: -20px;
 }
 
 p {
@@ -10,9 +28,105 @@ p {
     text-indent: 50px;
 }
 
+#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url(pacotes/projeto-glass-html5/_imagens/glass-logo-peq.jpg) no-repeat 0px 80px;
+}
+
+#cabecalho h1 {
+    font-family: 'bubblegum', sans-serif;
+    font: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#cabecalho h2 {
+    font-family: 'Titillium Web',cursive;
+    color: #888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#icone {
+    position: absolute;
+    left: 750px;
+    top: 70px;
+}
+
+#menu {
+    display: block;
+}
+
+#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    margin-top: -10px;
+}
+
+#menu li {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+#menu li:hover {
+    background-color: #606060;
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu a {
+    color: #000;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    padding-right: 25px;
+    border-right: 1px solid #606060;
+}
+
+#tabela-spec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tabela-spec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
 .foto-legenda {
     border: 8px solid white;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
     position: relative;
 }
 
@@ -36,4 +150,13 @@ p {
 
 .foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+#rodape p {
+    text-align: center;
 }
