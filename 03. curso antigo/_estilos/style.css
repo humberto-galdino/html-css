@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @font-face {
     font-family: 'bubblegum';
-    src: url(pacotes/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
+    src: url(../pacotes/projeto-glass-html5/_fonts/bubblegum-sans-regular.otf);
 }
 @font-face {
     font-family: 'computer';
-    src: url(pacotes/projeto-glass-html5/_fonts/computer-font.ttf);
+    src: url(../pacotes/projeto-glass-html5/_fonts/computer-font.ttf);
 }
 
 body {
@@ -116,6 +116,10 @@ a:hover {
     border-right: 1px solid #606060;
 }
 
+#corpo-full {
+
+}
+
 #noticia-principal h2{
     font-size: 13pt;
     color: #606060;
@@ -128,14 +132,15 @@ a:hover {
     font-family: 'bubblegum', sans-serif;
     font-size: 20pt;
     color: #606060;
+    margin-bottom: 0px;
 }
 
 #cabecalho-artigo h2 {
     font-size: 13pt;
     color: #cecece;
     background-color: #fff;
+    margin-top: 0px;
     margin-bottom: 0px;
-
 }
 
 #cabecalho-artigo h3 {
