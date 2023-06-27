@@ -181,6 +181,12 @@ a:hover {
     vertical-align: middle;
 }
 
+#video1 {
+    width: 500px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+
 .coluna-e {
     background-color: #606060;
     color: white;
@@ -190,6 +196,12 @@ a:hover {
 
 .coluna-d {
     background-color: #cecece;
+}
+
+#video2 {
+    width: 349px;
+    margin: 0 auto;
+    
 }
 
 #lateral {
